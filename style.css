@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body {
+    background-color: #ffffff;
+}
+.logo {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+    width: 100%;
+}
+.search-box {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #fff;
+  }
+
+  .search-box input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+  }
+
+  .search-box input::placeholder {
+    color: #aaa;
+  }
+
+  .user-list {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+  }
+
+  .user-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #4e3bce, #2c2b8f);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .user-card .info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user-card .info .name {
+    font-weight: bold;
+  }
+
+  .user-card .info .module {
+    font-size: 0.9rem;
+  }
+
+  .user-card button {
+    background-color: white;
+    color: #4e3bce;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .user-card button:hover {
+    background-color: #f0f0f0;
+  }
+.wave-footer {
+    position: absolute;
+    height: 100px;
+    background: linear-gradient(180deg, #ffffff 0%, #6a5acd 100%);
+    clip-path: ellipse(70% 30% at 50% 100%);
+}
