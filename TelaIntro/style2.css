@@ -15,7 +15,7 @@ body, html {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(135deg, #C6B3E8, #B19ADC, #8A74C8, #6353B3, #4744AC); /* Gradiente mais suave */
+    background: linear-gradient(135deg, #C6B3E8, #B19ADC, #8A74C8, #6353B3, #2F2C95); /* Gradiente mais suave */
     display: flex;
     justify-content: center;
     align-items: center;
