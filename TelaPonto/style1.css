@@ -1,119 +1,100 @@
 * {
-    margin: 20px;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins';
 }
+
+html, body {
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+    width: 100%;
+}
+
 body {
     background-color: #ffffff;
+    min-height: 100vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.2rem;
+}
+
+.name {
+    margin-left: 80px;
+    margin-top: -35px;
+    margin-bottom: 10px;
+    font-size: 2rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Faz a altura da página ocupar toda a tela */
-}
-#menu-lateral {
-    height: 150px;
-    display: flex;
+    justify-content: flex-start;
+    font-family: 'Poppins', sans-serif;
 }
 
-
-/* ul {
-    display: flex;
-    flex-direction: column;
-} */
-
-li {
-    list-style: none;
-    margin-bottom: 1.2rem;
-    display: flex;
-    align-items: center;
-    color: #889AAF;
-    margin-bottom: 30px;
-
+.welcome {
+    padding: 3rem;
+    margin: 20px;
 }
 
-/* li:hover {
-    color: #1250F3;
-} */
-/* a {
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 400;
-    color: #889AAF;
+#logo {
+    width: 85px;
+    margin-top: 5px;
 }
-a:hover {
-    color: #1250F3;
-} */
-.ch{
-    margin: 1px;
-    width: 5rem;
-}
-#text-button-point {
-    color: #ffffff;
-}
-.ph {
-    font-size: 1.5rem;
-    margin-right: 1rem;
-}
-.ph-gavel{ 
-    color: #ffffff;
-}
+
 #section-bater-ponto {
-    height: 100%;
+    margin-top: 100px;
     width: 85%;
+    max-width: 100%;
     padding: 2rem;
-    background-color: #ffffff;
-    border-radius: 1.5rem;
-    margin-left: 1.2rem;
+    margin: 0 auto;
 }
-icons-section-histórico {
-    width: 3rem;
+
+.frase {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: #464545;
+    text-align: center;
+    opacity: 0.8;
+    font-weight: 400;
+    transition: opacity 0.3s ease;
+    font-family: 'Poppins', sans-serif;
 }
-header {
-    height: 85px;
-    display: flex;
-    justify-content: center;  
-      
-}
-#logo-mobile {
-    display:none;
-}
-#circle {
-    display: none;
-}
+
 .name {
     font-size: 1.8rem;
     font-weight: 600;
 }
-.text{
-    font-size: 2rem;
+
+.text {
+    margin-left: 80px;
+    font-size: 1.3rem;
     display: flex;
-    justify-content: center;
-}
-#section-relogio{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
-   gap: 20px;
-}
-.frase-principal {
-    display: none;
-}
-.relogio{
-    display: flex;
+    justify-content: flex-start;
     font-family: 'Poppins', sans-serif;
-    font-size: 5em;
-    color: #171E2D;
+}
+
+#section-relogio {
+    margin-top: 50px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    /* padding-top: 100px; */
-    gap: 0.8rem;
+    flex-direction: column;
+    gap: 50px;
 }
+
+.relogio {
+    display: flex;
+    font-size: 5em;
+    color: #2F2C95;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    gap: 0.8rem;
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+}
+
 .relogio div {
-    width: 85px;
-    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,312 +102,97 @@ header {
     color: #ffffff;
     background: #2F2C95;
     border-radius: 10px;
-    border: 7px;
     box-shadow: 1px 2px 5px rgba(206, 202, 202, 0.7);
     font-weight: bolder;
-    font-size: 100px;
 }
-.relogio ponto{
-    padding: 10px;
-    background-color: #E0E0E0;
-    border-radius: 10px;
-    margin: 5px;
-    box-shadow: 0 0 10px rgba(148, 146, 146, 0.2);  
-}
-.ponto{
-    background-color: transparent;
-    box-shadow: none;
-    margin: 0.6px;
-    color: #2F2C95;
-    font-weight: bolder;
-    font-size: 90px;
 
-}
-.inicio{
-    text-align: center;
-    padding: 30px;
-}
-.nome{
-    font-weight: bolder;
-    font-size: 30px;
-}
-.frase{
-    font-weight: 200;
-    font-size: 15px;
-    padding: 35px 16px 15.52px 15.52px;
-}
-.button-button {
-    position: relative;
-    width: 16rem;
+.toggle-button {
+    width: 18rem;
     height: 4rem;
     background-color: #2F2C95;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.5s;
-    border-radius: 0.6rem;
-}
-.toggle-button {
-    width: 800px;
-    height: 50px; 
-    background-color: #11f367; 
-    border-radius: 4px;
+    border-radius: 0.4rem;
     display: flex;
     align-items: center;
     position: relative;
-    cursor: pointer;
-  }
-
-/* .slideDrag {
-    width: 3.6rem;
-    height: 3.2rem;
-    background-color: white;
-    position: absolute;
-    left: 0;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    cursor: grab;
-    transition: left 1s, opacity 0.5s linear;
-    border-radius: 0.5rem;
-    margin-left: 0.3rem;
-} */
-
-.button-button.ok {
-    background-color: #1250F3;
+    gap: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .button-button p {
     color: white;
     margin: 0;
     transition: opacity 1s;
+    font-family: 'Poppins', sans-serif;
 }
 
-.button-button.ok p {
-    opacity: 0;
-}
-
-.button-button.ok::after {
-    content: "OK!";
-    color: white;
-    position: absolute;
-    font-size: 16px;
-}
-.dragButton{
+.dragButton {
     width: 3.6rem;
     height: 3.2rem;
-    background-color: rgb(255, 255, 255);    
-    left: 0;
+    background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor:pointer;
-    border-radius: 0.5rem;
-    margin-left: 0.4rem;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    margin-left: -3.9rem;
     border: none;
     transition: transform 0.4s ease;
 }
-.hammer{
-    position:relative;
+
+.hammer {
+    position: relative;
     top: 25%;
     left: 25%;
     transform: translate(-50%, -50%);
     display: flex;
-    align-items:flex-start;
+    align-items: flex-start;
     justify-content: center;
     background-color: #ffffff;
+}
 
-}
 .label {
-    margin-top: 10px; /* Espaço entre o botão e o texto */
-    color: rgb(0, 0, 0);
-    font-size: 16px;
+    color: rgb(252, 252, 252);
+    font-size: 1.5rem;
     text-align: center;
-    transition: color 0.3s ease; /* Transição suave para mudanças de cor */
+    transition: color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
 }
-.message {
-    margin-top: 20px;
-    color: green;
-    font-size: 16px;
-    display: none;
-} 
-@media (max-width: 40rem) {
-    body {
-      background-color: #f5f5f5;
-      padding: 1.5rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    #menu-lateral {
-        display: flex;
-        align-items: end;
-        justify-content: center;
-        position: fixed;
-        bottom: 0;
-    }
-    /* .ph {
-        font-size: 2rem;
-        margin-right: 0rem;
-    }
-    .ph-gavel{ 
-        font-size: 1.8rem;
-    } */
-    #logo {
-        display: none;
-    }
+
+@media (max-width: 768px) {
     #section-bater-ponto {
         height: 100%;
         width: 100%;
         padding: 0rem;
-        background-color: #f5f5f5;
+        background-color: #ffffff;
         border-radius: 0rem;
         margin-left: 0rem;
-        overflow-y:inherit;
+        overflow-y: inherit;
+        margin-top: 0px;
     }
+
     .relogio div {
         width: 60px;
         height: 115px;
         font-size: 70px;
     }
-    header {
-        height: 50;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
-    }
-    #logo-mobile {
-        display: flex;
-        width: 4rem;
-    }
-    .icons-section-histórico {
-        width: 2.8rem;
-    }
-    .fraseprincipal {
-        display: none;
-    }
-    .frase-principal {
-        height: 50px;
-        width: 150px;
-        display: flex;
-        flex-direction: column;
-        padding-top: 5rem;
-    }
-    #title-page-mobile {
-        display: flex;
-        font-size: 1.6rem;
-        font-weight: 600;
-        padding: 5rem 0rem 0rem 0rem;
-    }
-    nav {
-        height: 72px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding: 1.5rem 0rem ;
-    }
-    #month {
-        font-size: 1.3rem;
-    }
-    .select {
-        border-width: 0px 5px;
-        font-size: 10px;
-        border-radius:6px;
-    }
-    .section-histórico-diario {
-        height: 135px;
-        width: 100%;
-        margin-top: 14px;
-    }
-    .section-histórico-diario p {
-        font-size: 0.9rem;
-        font-weight: 600;
-    }
-    .container-histórico-diario {
-        height: 100px;
-        border-radius: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .divisória-status {
-        height:80px ;
-        width: 120px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .status{
-        height: 35px;
-        width: 90px;
-    }
-    /* .ph-arrow-up{ 
-        font-size: 1rem;
-    }
-    .ph-arrow-down {
-        font-size: 1rem;
-    }
-    .ph-clock {
-        font-size: 1rem;
-    } */
-    /* .time-decoration {
-        height:32px ;
-        width:100px;
-        border-radius:6px ;
-        background-color: #CFD7E2;
-        margin-left: 0px;
-    }
-    .time-decoration p {
-        font-size: 1rem;
-    }
-    li {
-        margin-bottom: 0rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    } */
-    ul {
-        width: 100%;
-        height: 80px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem ;
-        padding: 0.5rem 1.5rem;
-        position: relative;
-        background-color: #ffffff;
-        box-shadow: 0px -4px  9px rgba(19, 19, 19, 0.096);
-    }
-    #menu-lateral {
-        height: 16%;
-        width: 100%;
-    }
-    a {
-        text-decoration: none;
-        font-size: 0.6rem;
-        font-weight: 400;
-        color: #889AAF;
-    }
-    #espaçamento {
-        width:5rem;
-        height: 7.5rem;
-      }
-    /* #dragButton{
-        width: 3.6rem;
-        height: 3.2rem;
-        background-color: rgb(226, 9, 9);
-        position: absolute;
-        left: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: grab;
-        border-radius: 0.5rem;
-        margin-left: 0.3rem;
-    } */
-  }
+}
+
+.wave-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    left: 0;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #04040a;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    font-family: 'Poppins', sans-serif;
+}

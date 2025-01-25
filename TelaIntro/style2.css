@@ -1,0 +1,44 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Container com gradiente de fundo */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #C6B3E8, #B19ADC, #8A74C8, #6353B3, #4744AC); /* Gradiente mais suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Mostra que a tela é clicável */
+}
+
+/* Estilo da logo */
+.logo {
+    font-size: 4rem;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    animation: fadeIn 3s ease-in-out forwards; /* Animação de fade-in */
+    opacity: 0; /* Começa invisível */
+}
+
+/* Animação de fade-in para a logo */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8); /* Começa um pouco menor */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); /* Cresce até o tamanho normal */
+    }
+}
