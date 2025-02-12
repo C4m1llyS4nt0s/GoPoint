@@ -10,19 +10,17 @@ body, html {
     overflow: hidden;
 }
 
-/* Container com gradiente de fundo */
 .container {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(135deg, #C6B3E8, #B19ADC, #8A74C8, #6353B3, #2F2C95); /* Gradiente mais suave */
+    background: linear-gradient(135deg, #C6B3E8, #B19ADC, #8A74C8, #6353B3, #2F2C95);
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer; /* Mostra que a tela é clicável */
+    cursor: pointer; 
 }
 
-/* Estilo da logo */
 .logo {
     font-size: 4rem;
     color: white;
